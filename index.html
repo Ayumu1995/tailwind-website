@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#23a6f0",
+              secondary1: "#40bb15",
+              secondary2: "#3c403d",
+              backgroundGradient1: "linear-gradient(90deg, #d71489, #004788)",
+              text: "#252b42",
+              secondText: "#737373",
+              lightText: "#ffffff",
+              darkBackground: "#252b42",
+              lightBackground: "#ffffff",
+              hover: "#2a7cc7",
+              disabledElement: "#8ec2f2",
+              muted: "#bdbdbd",
+              success: "#2dc071",
+              alert: "#e77c40",
+              danger: "#e74040",
+              lightGray1: "#fafafa",
+              lightGray2: "#ececec",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body></body>
 </html>
