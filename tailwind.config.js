@@ -30,6 +30,9 @@ module.exports = {
       fontSize: {
         title: "2.5em",
       },
+      screens: {
+        mxl: "1440px",
+      },
     },
   },
 };
