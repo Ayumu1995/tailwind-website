@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -43,8 +47,13 @@
             fontSize: {
               title: "2.5em",
             },
+
             screens: {
               mxl: "1440px",
+            },
+
+            backgroundPosition: {
+              "custom-position": "73% 50%", // 任意の位置を指定
             },
           },
         },
@@ -54,101 +63,143 @@
 
   <body class="font-montserrat">
     <main>
-          <section class="text-white" style="background: url('./assets/intro-desktop.jpg') no-repeat center center; background-size: cover;">
-      <!-- Navbar -->
-      <nav class="bg-gray-800 md:bg-black md:bg-opacity-50">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-          <!-- Brand -->
-          <a href="#" class="text-2xl font-bold">BrandName</a>
-    
-          <!-- Desktop Navbar -->
-          <div class="hidden md:flex space-x-6">
-            <a href="#" class="hover:text-blue-400 font-bold">Home</a>
-            <a href="#" class="hover:text-blue-400 font-bold">Product</a>
-            <a href="#" class="hover:text-blue-400 font-bold">Pricing</a>
-            <a href="#" class="hover:text-blue-400 font-bold">Contact</a>
-          </div>
-    
-          <!-- Desktop Buttons -->
-          <div class="hidden md:flex space-x-4">
-            <a href="#" class="text-sm hover:text-blue-400 font-bold mt-2">Login</a>
-            <a href="#" class="bg-[#23A6F0] text-white px-4 py-2 font-bold rounded-md text-sm hover:bg-blue-600">
-              Become a member
-            </a>
-          </div>
-    
-          <!-- Mobile Icons -->
-          <div class="flex md:hidden space-x-4">
-            <button>
-              <img src="./assets/icn search .icn-xs.png" alt="search">
-            </button>
-            <button>
-              <img src="./assets/icn shopping-cart .icn-xs.png" alt="">
-            </button>
-            <label for="menu-toggle" class="cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </label>
-          </div>
-        </div>
-    
-        <!-- Mobile Navbar -->
-        <input type="checkbox" id="menu-toggle" class="hidden peer">
-        <div class="peer-checked:block hidden bg-gray-800 text-white md:hidden">
-          <nav class="flex flex-col items-center py-6 space-y-4">
-            <a href="#" class="hover:text-blue-400 font-bold">Home</a>
-            <a href="#" class="hover:text-blue-400 font-bold">Product</a>
-            <a href="#p" class="hover:text-blue-400 font-bold">Pricing</a>
-            <a href="#" class="hover:text-blue-400 font-bold">Contact</a>
+      <section>
+        <div
+          class="relative w-full h-[620px] lg:h-[670px] bg-[url('./assets/intro-desktop.jpg')] bg-custom-position bg-cover bg-no-repeat bg-[rgb(0,0,0,0.5)] bg-blend-multiply lg:bg-blend-normal"
+        >
+          <!-- nav-bar -->
+          <nav class="relative top-6 text-white">
+            <!-- left part of nav -->
+            <div class="absolute left-8 md:left-16 lg:left-48 flex gap-24">
+              <h1 class="text-2xl font-bold">BrandName</h1>
+              <div class="hidden xl:flex items-center">
+                <ul class="flex gap-x-5">
+                  <li><a href="#" class="text-sm font-semibold">Home</a></li>
+                  <li><a href="#" class="text-sm font-semibold">Product</a></li>
+                  <li><a href="#" class="text-sm font-semibold">Pricing</a></li>
+                  <li><a href="#" class="text-sm font-semibold">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- right part of nav for xl and bigger -->
+            <div class="hidden xl:flex absolute right-48 max-h-8 items-center gap-14">
+              <a href="#" class="text-sm font-semibold">Login</a>
+              <a
+                href="#"
+                class="w-[214px] h-[52px] flex justify-center items-center gap-3 rounded-[5px] bg-primary text-sm font-semibold"
+                >Become a member<i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </a>
+            </div>
+            <!-- right part of nav for lg and smaller -->
+            <div class="xl:hidden absolute right-8 md:right-16 lg:right-48 flex items-center gap-8">
+              <a href="#"><img src="./assets/search.png" /></a>
+              <a href="#"><img src="./assets/shopping-cart.png" /></a>
+              <input type="checkbox" id="menu-toggle" class="peer hidden" />
+              <label for="menu-toggle" class="cursor-pointer">
+                <img src="./assets/hamburger-menu.png" alt="Menu" />
+              </label>
+            </div>
           </nav>
-        </div>
-      </nav>
-    
-      <!-- Intro Section -->
-      <section class="relative bg-cover bg-center h-screen">
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white relative z-10 px-6">
-          <h1 class="text-5xl md:text-6xl font-black mb-10">We Ensure A Best <br> Insurance Service</h1>
-          <p class="text-xl md:text-xl font-semibold mb-10">We know how large objects will act, <br> but things on a small scale just do not act that way.</p>
-          <div class="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row">
-            <a href="#" class="bg-[#23A6F0] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-600">
-              Get Quote Now
-            </a>
-            <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-600">
-              Learn More
-            </a>
+
+          <div
+            class="lg:absolute left-48 bottom-28 lg:w-[600px] pt-[4.5rem] px-14 lg:px-0 flex flex-col gap-[40px] lg:gap-[35px] text-white"
+          >
+            <h1 class="font-extrabold text-[40px] lg:text-[58px] text-center lg:text-start">
+              We Ensure A Best <br class="hidden sm:block lg:hidden" />
+              Insurance Service
+            </h1>
+            <!-- p for mobile -->
+            <p class="text-xl text-center lg:hidden">
+              We know how large <br class="md:hidden" />
+              objects will act, but things <br />
+              on a small scale just do <br class="md:hidden" />
+              not act that way.
+            </p>
+
+            <!-- p for not mobile -->
+            <p class="text-xl text-start hidden lg:block">
+              We know how large objects will act,<br />
+              but things on a small scale
+            </p>
+            <div class="flex flex-col lg:flex-row items-center gap-x-[10px] gap-y-6">
+              <a
+                href="#"
+                class="w-[185px] h-[42px] lg:h-[52px] flex justify-center items-center rounded-full bg-primary text-sm font-semibold"
+                >Get Quote Now</a
+              >
+              <a
+                href="#"
+                class="w-[154px] h-[42px] lg:h-[52px] flex justify-center items-center border border-primary lg:border-white rounded-full text-primary lg:text-white text-sm font-bold lg:font-semibold"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
       </section>
-    </section>
-    
-    <!-- Features Section -->
-    <section class="bg-gray-800 py-16">
-      <div class="container mx-auto text-center text-white">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-12">
+
+      <!-- Features Section -->
+      <section>
+        <div
+          class="w-full min-h-[950px] lg:min-h-[435px] flex flex-col lg:flex-row justify-center items-center gap-8 bg-darkBackground text-center text-white"
+        >
           <!-- Feature 1 -->
-          <div>
-            <img src="./assets/peace-of-mind.png" alt="Peace of Mind Icon" class="mx-auto mb-4">
-            <h6 class="text-lg font-bold mb-2">Peace of Mind</h6>
-            <p>So it really behaves like neither. Now we have given up.</p>
+          <div class="w-[325px] h-[243px] flex flex-col justify-center items-center">
+            <img
+              src="./assets/peace-of-mind.png"
+              alt="Peace of Mind Icon"
+              class="hidden lg:block h-[60px] mx-auto mb-8"
+            />
+            <img
+              src="./assets/icn resize .icn-xl.png"
+              alt="Resize Icon"
+              class="lg:hidden h-[60px] mx-auto mb-8"
+            />
+            <h6 class="font-bold mb-3">Peace of Mind</h6>
+            <p class="text-sm">
+              So it really behaves like neither.<br />
+              Now we have given up.
+            </p>
           </div>
           <!-- Feature 2 -->
-          <div>
-            <img src="./assets/set-for-life.png" alt="Set for Life Icon" class="mx-auto mb-4">
-            <h6 class="text-lg font-bold mb-2">Set For Life</h6>
-            <p>They were used to create the machines that launched.</p>
+          <div class="w-[325px] h-[243px] flex flex-col justify-center items-center">
+            <img
+              src="./assets/set-for-life.png"
+              alt="Set for Life Icon"
+              class="hidden lg:block h-[60px] mx-auto mb-8"
+            />
+            <img
+              src="./assets/icn resize .icn-xl.png"
+              alt="Resize Icon"
+              class="lg:hidden h-[60px] mx-auto mb-8"
+            />
+            <h6 class="font-bold mb-3">Set For Life</h6>
+            <p class="text-sm">
+              They were used to create the<br />
+              machines that launched.
+            </p>
           </div>
           <!-- Feature 3 -->
-          <div>
-            <img src="./assets/satisfaction.png" alt="100% Satisfaction Icon" class="mx-auto mb-4">
-            <h6 class="text-lg font-bold mb-2">100% Satisfaction</h6>
-            <p>So it really behaves like neither. Now we have given up.</p>
+          <div class="w-[325px] h-[243px] flex flex-col justify-center items-center">
+            <img
+              src="./assets/satisfaction.png"
+              alt="100% Satisfaction Icon"
+              class="hidden lg:block h-[60px] mx-auto mb-8"
+            />
+            <img
+              src="./assets/icn resize .icn-xl.png"
+              alt="Resize Icon"
+              class="lg:hidden h-[60px] mx-auto mb-8"
+            />
+            <h6 class="font-bold mb-3">100% Satisfaction</h6>
+            <p class="text-sm">
+              So it really behaves like neither.<br />
+              Now we have given up.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
       <section>
         <div
           class="max-h-[1265px] min-h-[772px] py-20 md:py-28 bg-disabledElement flex flex-col justify-center items-center text-white px-12"
