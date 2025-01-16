@@ -39,10 +39,63 @@
             fontFamily: {
               montserrat: ["Montserrat", "sans-serif"],
             },
+            fontSize: {
+              title: "2.5em",
+            },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body class="font-montserrat">
+    <main>
+      <section>
+        <div
+          class="max-h-[1265px] min-h-[772px] py-20 md:py-28 bg-disabledElement flex flex-col justify-center items-center text-white px-12"
+        >
+          <h2 class="w-10/12 md:hidden text-title text-center font-bold">What Clients Say</h2>
+
+          <h2 class="hidden md:block text-title font-bold">Industry</h2>
+          <p class="w-10/12 lg:w-[470px] m-4 text-sm text-center">
+            Problems trying to resolve the conflict between <br class="hidden lg:block" />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+          <div class="mt-16 flex flex-col gap-y-8 lg:gap-y-16 xl:flex-row xl:gap-x-32">
+            <div class="max-w-[450px] min-w-[348px] min-h-[288px] px-10 py-8 relative bg-white">
+              <img
+                src="./assets/person1.svg"
+                alt="person1"
+                class="absolute top-8 -left-11 hidden sm:block"
+              />
+              <h3 class="text-2xl text-text font-semibold">Regina Miles</h3>
+              <p class="text-sm text-secondText mt-1">Designer</p>
+              <img src="./assets/stars.svg" alt="stars" class="my-4" />
+              <p class="text-sm text-secondText text-justify">
+                This proved to be impossible using the traditional concepts of space and time.
+                Einstein developed a new view of time first and then space. This proved to be
+                impossible using the traditional concepts of space and time. Einstein developed a
+                new view of time first and then space.
+              </p>
+            </div>
+            <div class="max-w-[450px] min-w-[348px] min-h-[288px] px-10 py-8 relative bg-white">
+              <img
+                src="./assets/person2.svg"
+                alt="person2"
+                class="absolute top-8 -left-11 hidden sm:block"
+              />
+              <h3 class="text-2xl text-text font-semibold">Regina Miles</h3>
+              <p class="text-sm text-secondText mt-1">Designer</p>
+              <img src="./assets/stars.svg" alt="stars" class="my-4" />
+              <p class="text-sm text-secondText text-justify">
+                This proved to be impossible using the traditional concepts of space and time.
+                Einstein developed a new view of time first and then space. This proved to be
+                impossible using the traditional concepts of space and time. Einstein developed a
+                new view of time first and then space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
