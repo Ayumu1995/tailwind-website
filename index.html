@@ -182,31 +182,232 @@
 
       <section>
         <div
-          class="max-h-[2525px] min-h-[879px] py-20 md:py-28 bg-darkBackground flex flex-col justify-center items-center text-white px-12"
+          class="max-h-[2525px] min-h-[879px] pt-20 pb-32 md:py-28 bg-darkBackground flex flex-col justify-center items-center text-white px-12"
         >
-          <h2 class="hidden md:block text-title font-bold">Pricing</h2>
+          <h2 class="text-title xl:font-bold">Pricing</h2>
           <p class="w-10/12 lg:w-[470px] m-4 text-sm text-center">
             Problems trying to resolve the conflict between <br class="hidden lg:block" />
             the two major realms of Classical physics: Newtonian mechanics
           </p>
-          <div class="flex flex-col gap-y-8">
+
+          <div class="mt-16 flex flex-col xl:flex-row gap-x-8 gap-y-14">
+            <!-- first card -->
+
             <div
               class="w-[327px] max-h-[689px] min-h-[665px] py-12 rounded-[10px] flex flex-col items-center gap-y-[35px] bg-white"
             >
-              <h3 class="text-2xl text-text font-bold">FREE</h3>
-              <p class="w-1/2 text-secondText text-center font-bold">
+              <!-- header -->
+              <h3 class="text-2xl text-text font-bold order-1">FREE</h3>
+
+              <!-- body -->
+              <p class="w-1/2 text-secondText text-center font-bold order-2">
                 Organize across all apps by hand
               </p>
-              <div>
+
+              <!-- price part -->
+              <div class="hidden xl:block order-3">
                 <h2 class="text-primary font-bold text-[2.5em] text-center">0$</h2>
                 <p class="text-disabledElement text-center font-bold">Per Month</p>
               </div>
+
+              <div class="flex items-center xl:hidden order-3">
+                <h2 class="text-primary font-bold text-[2.5em] text-center">0</h2>
+                <div class="ms-3">
+                  <p class="text-primary font-bold">$</p>
+                  <p class="text-disabledElement text-sm font-semibold">Per Month</p>
+                </div>
+              </div>
+
+              <!-- button -->
               <a
                 href="#"
-                class="w-[246px] h-[52px] flex justify-center items-center rounded-[5px] bg-primary text-sm font-semibold"
+                class="w-[246px] h-[52px] mt-4 xl:mt-0 flex justify-center items-center rounded-[5px] bg-primary text-sm font-semibold order-6 xl:order-4"
                 >Try for free
               </a>
-              <div></div>
+
+              <!-- features -->
+              <div class="w-[247px] flex flex-col gap-y-[15px] order-5">
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    1GB Cloud storage
+                  </p>
+                </div>
+                <div class="flex gap-x-3 relative">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p
+                    class="absolute top-1 left-11 flex items-center text-text text-sm font-semibold pb-1"
+                  >
+                    Email and community <br />
+                    support
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- second card -->
+            <div
+              class="relative w-[327px] max-h-[689px] min-h-[665px] py-12 rounded-[10px] flex flex-col items-center gap-y-[35px] bg-white"
+            >
+              <div
+                class="absolute -top-7 right-5 w-[90px] h-[90px] rounded-full flex justify-center items-center text-2xl font-bold bg-alert"
+              >
+                New
+              </div>
+              <!-- header -->
+              <h3 class="text-2xl text-text font-bold order-1">SILVER</h3>
+
+              <!-- body -->
+              <p class="w-1/2 text-secondText text-center font-bold order-2">
+                Organize across all apps by hand
+              </p>
+
+              <!-- price part -->
+              <div class="hidden xl:block order-3">
+                <h2 class="text-primary font-bold text-[2.5em] text-center">9.99$</h2>
+                <p class="text-disabledElement text-center font-bold">Per Month</p>
+              </div>
+
+              <div class="flex items-center xl:hidden order-3">
+                <h2 class="text-primary font-bold text-[2.5em] text-center">9.99</h2>
+                <div class="ms-3">
+                  <p class="text-primary font-bold">$</p>
+                  <p class="text-disabledElement text-sm font-semibold">Per Month</p>
+                </div>
+              </div>
+
+              <!-- button -->
+              <a
+                href="#"
+                class="w-[246px] h-[52px] mt-4 xl:mt-0 flex justify-center items-center rounded-[5px] bg-primary text-sm font-semibold order-6 xl:order-4"
+                >Try for free
+              </a>
+
+              <!-- features -->
+              <div class="w-[247px] flex flex-col gap-y-[15px] order-5">
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    1GB Cloud storage
+                  </p>
+                </div>
+                <div class="flex gap-x-3 relative">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p
+                    class="absolute top-1 left-11 flex items-center text-text text-sm font-semibold pb-1"
+                  >
+                    Email and community <br />
+                    support
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- third card -->
+            <div
+              class="w-[327px] max-h-[689px] min-h-[665px] py-12 rounded-[10px] flex flex-col items-center gap-y-[35px] bg-white"
+            >
+              <!-- header -->
+              <h3 class="text-2xl text-text font-bold order-1">GOLD</h3>
+
+              <!-- body -->
+              <p class="w-1/2 text-secondText text-center font-bold order-2">
+                Organize across all apps by hand
+              </p>
+
+              <!-- price part -->
+              <div class="hidden xl:block order-3">
+                <h2 class="text-primary font-bold text-[2.5em] text-center">19.99$</h2>
+                <p class="text-disabledElement text-center font-bold">Per Month</p>
+              </div>
+
+              <div class="flex items-center xl:hidden order-3">
+                <h2 class="text-primary font-bold text-[2.5em] text-center">19.99</h2>
+                <div class="ms-3">
+                  <p class="text-primary font-bold">$</p>
+                  <p class="text-disabledElement text-sm font-semibold">Per Month</p>
+                </div>
+              </div>
+
+              <!-- button -->
+              <a
+                href="#"
+                class="w-[246px] h-[52px] mt-4 xl:mt-0 flex justify-center items-center rounded-[5px] bg-primary text-sm font-semibold order-6 xl:order-4"
+                >Try for free
+              </a>
+
+              <!-- features -->
+              <div class="w-[247px] flex flex-col gap-y-[15px] order-5">
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs secondary-color-1.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    Unlimited product updates
+                  </p>
+                </div>
+                <div class="flex gap-x-3">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p class="flex items-center text-text text-sm font-semibold pb-1">
+                    1GB Cloud storage
+                  </p>
+                </div>
+                <div class="flex gap-x-3 relative">
+                  <img src="./assets/icn-circle circle-xs mute.png" alt="check" />
+                  <p
+                    class="absolute top-1 left-11 flex items-center text-text text-sm font-semibold pb-1"
+                  >
+                    Email and community <br />
+                    support
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
