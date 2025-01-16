@@ -33,6 +33,9 @@ module.exports = {
       screens: {
         mxl: "1440px",
       },
+      backgroundPosition: {
+        "custom-position": "73% 50%", // 任意の位置を指定
+      },
     },
   },
 };
